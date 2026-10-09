@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Arduino Signal Lab: investigating diode behaviour, RC charging and experimental electronics measurements.">
+  <title>Arduino Signal Lab | TheTangentExpert</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="../../index.html">Home</a>
+      <a href="../index.html">Projects</a>
+      <a href="../../about/index.html">About</a>
+      <a href="../../contact/index.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p>ENGINEERING PROJECT / ELECTRONICS</p>
+      <h1>Arduino Signal Lab</h1>
+      <p>
+        Investigating electronic components through circuit analysis,
+        measurements and experimental data.
+      </p>
+      <p><strong>Status:</strong> In progress</p>
+    </section>
+
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        The goal is to develop a small electronics test bench using
+        an Arduino Uno, basic electronic components and a multimeter.
+        The experiments investigate circuit behaviour and compare
+        theoretical predictions with measured results.
+      </p>
+    </section>
+
+    <section>
+      <h2>Objectives</h2>
+      <ul>
+        <li>Investigate the forward voltage of a 1N4001 diode.</li>
+        <li>Measure the charging response of an RC circuit.</li>
+        <li>Collect voltage data using the Arduino.</li>
+        <li>Compare experimental results with circuit theory.</li>
+        <li>Identify sources of error and possible improvements.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Components and Equipment</h2>
+      <ul>
+        <li>Arduino Uno</li>
+        <li>1N4001 rectifier diode</li>
+        <li>10 kΩ resistor</li>
+        <li>1 µF capacitor</li>
+        <li>Digital multimeter</li>
+        <li>Arduino data logging and serial tools</li>
+      </ul>
+      <p>
+        Additional resistors and the 741CN operational amplifier
+        may be used in separate experiments after their circuits
+        and operating limitations are checked.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experiment 1: Diode Characterisation</h2>
+      <p>
+        A forward-biased diode is tested with a series resistor.
+        The voltage across the diode is measured and the current
+        is estimated using Ohm's law.
+      </p>
+      <p><strong>Calculation:</strong></p>
+      <p>
+        I = (Vsupply - Vdiode) / R
+      </p>
+      <p>
+        The diode voltage depends on current, temperature and the
+        particular component. Measurements must be recorded before
+        conclusions are drawn.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experiment 2: RC Charging Response</h2>
+      <p>
+        A resistor and capacitor are used to investigate how
+        capacitor voltage changes over time.
+      </p>
+      <p><strong>Time constant:</strong></p>
+      <p>τ = RC</p>
+      <p>
+        For a 10 kΩ resistor and a 1 µF capacitor, the nominal
+        time constant is 10 ms.
+      </p>
+      <p><strong>Theoretical charging equation:</strong></p>
+      <p>Vc(t) = Vs(1 - e^(-t/RC))</p>
+      <p>
+        The measured response will be compared with the theoretical
+        curve, accounting for sampling rate, component tolerance
+        and measurement limitations.
+      </p>
+    </section>
+
+    <section>
+      <h2>Build Photographs and Circuit Diagrams</h2>
+      <p>
+        Add photographs of the actual circuit, a labelled wiring
+        diagram and the measurement setup here.
+      </p>
+      <!-- Example once the image exists:
+      <img src="../../assets/projects/signal-lab/setup.jpg"
+           alt="Arduino Signal Lab experimental circuit">
+      -->
+    </section>
+
+    <section>
+      <h2>Results and Analysis</h2>
+      <p>
+        Experimental measurements, plots and calculated errors
+        will be added after the tests are completed.
+      </p>
+      <!-- Add verified data tables and graphs here. -->
+    </section>
+
+    <section>
+      <h2>Challenges and Improvements</h2>
+      <ul>
+        <li>Investigate measurement resolution and sampling rate.</li>
+        <li>Check resistor and capacitor tolerances.</li>
+        <li>Improve wiring and repeatability.</li>
+        <li>Compare results with independent multimeter readings.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What Comes Next?</h2>
+      <p>
+        Future experiments may explore diode rectification,
+        signal conditioning and basic operational-amplifier
+        circuits where the supply and component limitations permit.
+      </p>
+      <a href="../index.html">← Back to all projects</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 TheTangentExpert</p>
+  </footer>
+</body>
+</html>
