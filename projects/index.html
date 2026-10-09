@@ -10,6 +10,29 @@
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../style.css">
 </head>
+  ```html
+<script>
+  const menuButton = document.querySelector(".menu");
+  const nav = document.querySelector(".nav nav");
+
+  menuButton.addEventListener("click", () => {
+    const isOpen = nav.style.display === "flex";
+
+    nav.style.display = isOpen ? "none" : "flex";
+    nav.style.flexDirection = "column";
+    nav.style.alignItems = "flex-start";
+    nav.style.position = "absolute";
+    nav.style.top = "76px";
+    nav.style.right = "0";
+    nav.style.padding = "20px";
+    nav.style.background = "var(--paper)";
+    nav.style.width = "100%";
+    nav.style.zIndex = "100";
+
+    menuButton.textContent = isOpen ? "☰" : "✕";
+  });
+</script>
+```
 <body>
   <header class="nav">
     <a class="brand" href="#top"><span class="brand-mark">∿</span> TheTangentExpert</a>
